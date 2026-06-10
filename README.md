@@ -187,21 +187,9 @@ The images below present hardware development stages from the most recent versio
 pip install opencv-python mediapipe numpy adafruit-circuitpython-pca9685
 ```
 
-### Run
-
-```bash
-python Kod/script.py
-```
-
----
-
 ## Configuration
 
-Configuration values are defined directly inside:
-
-```text
-Kod/script.py
-```
+Configuration values are defined directly
 
 Examples include:
 
@@ -256,49 +244,13 @@ A DummyPCA implementation allows running the application without physical hardwa
 
 ---
 
-## Project Structure
-
-```text
-ADAPTER/
-├── Adapter STL models
-
-Kod/
-├── Python source code
-├── LabVIEW project files (*.vi)
-├── Controls (*.ctl)
-└── Configuration assets (*.ctt)
-
-photos/
-├── Hand_Inside.jpg
-├── Work_in_Progres1.jpg
-├── Work_in_Progres2.jpg
-├── Work_in_Progres3.jpg
-├── Work_in_Progres4.jpg
-├── Work_in_Progres_py1.jpg
-└── Work_in_Progres_py2.jpg
-
-PRZEDRAMIE/
-├── Forearm STL models
-
-REKA ROBOTA/
-├── Hand STL models
-
-video/
-├── Hand_Tracking.gif
-└── Hand_Tracking_Py.gif
-```
-
 ---
 
 ## Testing
 
-No automated tests are included in the repository.
+Tests are private due to commercial and intellectual property reasons.
 
 ---
-
-## CI/CD
-
-No CI/CD workflows are included in the repository.
 
 ---
 
