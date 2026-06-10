@@ -120,13 +120,13 @@ Robotic Hand
 
 The images below present hardware development stages from the most recent version to earlier iterations.
 
-![Hardware Progress](photos/Work_in_Progres1.jpg)
+![Hardware Progress](photos/Work_in_Progres4.jpg)
 
-![Hardware Progress 2](photos/Work_in_Progres2.jpg)
+![Hardware Progress 2](photos/Work_in_Progres3.jpg)
 
-![Hardware Progress 3](photos/Work_in_Progres3.jpg)
+![Hardware Progress 3](photos/Work_in_Progres2.jpg)
 
-![Hardware Progress 4](photos/Work_in_Progres4.jpg)
+![Hardware Progress 4](photos/Work_in_Progres1.jpg)
 
 ---
 
