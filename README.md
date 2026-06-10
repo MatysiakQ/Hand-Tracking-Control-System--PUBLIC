@@ -7,6 +7,8 @@
 [![LabVIEW](https://img.shields.io/badge/LabVIEW-2025-yellow?style=for-the-badge\&logo=ni)](https://www.ni.com/labview/)
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-Middleware-C51A4A?style=for-the-badge\&logo=raspberrypi)](https://www.raspberrypi.com/)
 
+Developed by **Adam Jastrzębski** & **Łukasz Koszołko**
+
 A computer vision project that tracks human hand movement and controls a physical robotic hand using servo motors, MediaPipe hand tracking, LabVIEW integration, and a custom Raspberry Pi middleware layer.
 
 ---
@@ -193,11 +195,11 @@ Kod/script.py
 
 Examples include:
 
-* finger smoothing factors,
-* deadband thresholds,
-* activation timings,
-* timeout values,
-* PWM ranges.
+* finger smoothing factors
+* deadband thresholds
+* activation timings
+* timeout values
+* PWM ranges
 
 No environment variables are required.
 
@@ -253,8 +255,6 @@ if results.multi_hand_landmarks:
         )
 ```
 
----
-
 ### Finger Angle Calculation
 
 Finger bending is calculated using geometric relationships between hand landmarks.
@@ -274,8 +274,6 @@ def calculate_angle(a, b, c):
         )
     )
 ```
-
----
 
 ### Motion Smoothing
 
@@ -355,3 +353,29 @@ This project helped me learn how computer vision can be combined with hardware c
 ## Source Code Availability
 
 Source code is private due to commercial and intellectual property reasons.
+
+---
+
+## Authors
+
+### Adam Jastrzębski
+
+[![GitHub](https://img.shields.io/badge/GitHub-MatysiakQ-181717?style=for-the-badge\&logo=github)](https://github.com/MatysiakQ)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adam_Jastrzębski-0A66C2?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/adamjastrzebski/)
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-adamjastrzebski.bio-4CAF50?style=for-the-badge\&logo=googlechrome)](https://adamjastrzebski.bio/)
+
+---
+
+### Łukasz Koszołko
+
+[![GitHub](https://img.shields.io/badge/GitHub-lKoszolko-181717?style=for-the-badge\&logo=github)](https://github.com/lKoszolko)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Łukasz_Koszołko-0A66C2?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/%C5%82ukasz-koszo%C5%82ko-069828355/)
+
+---
+
+## Acknowledgements
+
+This project was developed collaboratively by Adam Jastrzębski and Łukasz Koszołko as part of a robotics and computer vision system integrating Python, MediaPipe, LabVIEW, Raspberry Pi, and custom-designed mechanical components.
