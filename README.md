@@ -1,11 +1,11 @@
 # Robotic Hand Tracking Controller
 
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](https://github.com/MatysiakQ/Hand-Tracking-Control-System)
-[![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge\&logo=python)](https://www.python.org/)
-[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-red?style=for-the-badge\&logo=opencv)](https://opencv.org/)
+[![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-red?style=for-the-badge&logo=opencv)](https://opencv.org/)
 [![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand%20Tracking-orange?style=for-the-badge)](https://developers.google.com/mediapipe)
-[![LabVIEW](https://img.shields.io/badge/LabVIEW-2025-yellow?style=for-the-badge\&logo=ni)](https://www.ni.com/labview/)
-[![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-Middleware-C51A4A?style=for-the-badge\&logo=raspberrypi)](https://www.raspberrypi.com/)
+[![LabVIEW](https://img.shields.io/badge/LabVIEW-2025-yellow?style=for-the-badge&logo=ni)](https://www.ni.com/labview/)
+[![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-Middleware-C51A4A?style=for-the-badge&logo=raspberrypi)](https://www.raspberrypi.com/)
 
 Developed by **Adam Jastrzębski** & **Łukasz Koszołko**
 
@@ -21,44 +21,43 @@ A webcam feed is processed using OpenCV and MediaPipe to detect hand landmarks i
 
 The project also includes a custom middleware layer that enables LabVIEW-based control on Raspberry Pi devices, allowing LabVIEW components and Python-based vision processing to work together.
 
-The repository contains Python control software, LabVIEW project files, STL models used to build the robotic hand and forearm assembly, project photos, and demonstration videos.
+The repository contains Python control software, LabVIEW project files, STL models used to build the robotic hand and forearm assembly, project photos, and demonstration GIFs.
 
----
 
 ## Features
 
-* Real-time hand tracking
-* Hand landmark detection
-* Finger angle calculation
-* Rotation-aware landmark processing
-* Servo PWM mapping
-* PCA9685 servo control
-* Motion smoothing using EMA filtering
-* Deadband filtering
-* Idle and Tracking operating modes
-* Automatic return-to-default position
-* Calibration wave sequence
-* LabVIEW integration
-* Raspberry Pi middleware support
-* Hardware fallback mode
-* Included STL models for the hand and forearm
-* Included LabVIEW assets
+- Real-time hand tracking
+- Hand landmark detection
+- Finger angle calculation
+- Rotation-aware landmark processing
+- Servo PWM mapping
+- PCA9685 servo control
+- Motion smoothing using EMA filtering
+- Deadband filtering
+- Idle and Tracking operating modes
+- Automatic return-to-default position
+- Calibration wave sequence
+- LabVIEW integration
+- Raspberry Pi middleware support
+- Hardware fallback mode
+- Included STL models for the hand and forearm
+- Included LabVIEW assets
 
 ---
 
 ## Tech Stack
 
-| Category               | Technology       |
-| ---------------------- | ---------------- |
-| Language               | Python           |
-| Computer Vision        | OpenCV           |
-| Hand Tracking          | MediaPipe        |
-| Numerical Computing    | NumPy            |
-| Servo Control          | Adafruit PCA9685 |
-| Hardware Communication | board, busio     |
-| Engineering Tools      | LabVIEW          |
-| Embedded Platform      | Raspberry Pi     |
-| CAD Assets             | STL Models       |
+| Category | Technology |
+|----------|------------|
+| Language | Python |
+| Computer Vision | OpenCV |
+| Hand Tracking | MediaPipe |
+| Numerical Computing | NumPy |
+| Servo Control | Adafruit PCA9685 |
+| Hardware Communication | board, busio |
+| Engineering Tools | LabVIEW |
+| Embedded Platform | Raspberry Pi |
+| CAD Assets | STL Models |
 
 ---
 
@@ -66,29 +65,29 @@ The repository contains Python control software, LabVIEW project files, STL mode
 
 ```text
 Camera
-   ↓
+↓
 OpenCV
-   ↓
+↓
 MediaPipe
-   ↓
+↓
 Hand Landmark Detection
-   ↓
+↓
 Finger Angle Calculation
-   ↓
+↓
 Signal Smoothing
-   ↓
+↓
 PWM Mapping
-   ↓
+↓
 Python Control Layer
-   ↓
+↓
 LabVIEW Middleware
-   ↓
+↓
 Raspberry Pi
-   ↓
+↓
 PCA9685
-   ↓
+↓
 Servo Motors
-   ↓
+↓
 Robotic Hand
 ```
 
@@ -113,19 +112,15 @@ Robotic Hand
 
 ### Internal Hand Mechanism
 
-The assembled robotic hand showing the internal tendon routing and servo-driven mechanism.
-
 ![Internal Mechanism](photos/Hand_Inside.jpg)
 
 ---
 
 ### Hardware Development Progress
 
-Latest hardware development stage.
+The images below present hardware development stages from the most recent version to earlier iterations.
 
 ![Hardware Progress](photos/Work_in_Progres1.jpg)
-
-Previous development iterations.
 
 ![Hardware Progress 2](photos/Work_in_Progres2.jpg)
 
@@ -137,29 +132,44 @@ Previous development iterations.
 
 ### Python Hand Tracking Development
 
-Development and testing of hand tracking and wrist detection.
-
 ![Python Tracking](photos/Work_in_Progres_py1.jpg)
 
 ![Python Tracking 2](photos/Work_in_Progres_py2.jpg)
 
 ---
 
-## Demo Videos
+## Demonstrations
 
 ### Full Robotic Hand Demonstration
 
-Physical robotic hand controlled through the complete tracking pipeline.
-
-📹 [Hand Tracking Demo](video/Hand_Tracking.mp4)
+![Robotic Hand Demo](video/Hand_Tracking.gif)
 
 ---
 
 ### Python Hand Tracking Demonstration
 
-Real-time hand tracking, landmark detection, and motion analysis.
+![Hand Tracking Demo](video/Hand_Tracking_Py.gif)
 
-📹 [Hand Tracking Python Demo](video/Hand_Tracking_py.mp4)
+---
+
+## Development Journey
+
+### Hardware Development
+
+- Mechanical hand design
+- Tendon routing improvements
+- Servo integration
+- Electronics assembly
+- Calibration and testing
+
+### Software Development
+
+- Hand landmark detection
+- Finger angle calculations
+- Motion filtering
+- Servo mapping
+- Raspberry Pi middleware integration
+- LabVIEW communication layer
 
 ---
 
@@ -167,9 +177,9 @@ Real-time hand tracking, landmark detection, and motion analysis.
 
 ### Requirements
 
-* Python 3
-* Webcam
-* PCA9685 controller (optional for hardware control)
+- Python 3
+- Webcam
+- PCA9685 controller (optional for hardware control)
 
 ### Install Dependencies
 
@@ -195,13 +205,11 @@ Kod/script.py
 
 Examples include:
 
-* finger smoothing factors
-* deadband thresholds
-* activation timings
-* timeout values
-* PWM ranges
-
-No environment variables are required.
+- finger smoothing factors
+- deadband thresholds
+- activation timings
+- timeout values
+- PWM ranges
 
 ---
 
@@ -237,54 +245,14 @@ A DummyPCA implementation allows running the application without physical hardwa
 
 ---
 
-## Code Highlights
+## Repository Contents
 
-### Hand Landmark Detection
-
-MediaPipe is used to detect and track hand landmarks in real time.
-
-```python
-results = hands.process(rgb_frame)
-
-if results.multi_hand_landmarks:
-    for hand_landmarks in results.multi_hand_landmarks:
-        mp_draw.draw_landmarks(
-            frame,
-            hand_landmarks,
-            mp_hands.HAND_CONNECTIONS
-        )
-```
-
-### Finger Angle Calculation
-
-Finger bending is calculated using geometric relationships between hand landmarks.
-
-```python
-def calculate_angle(a, b, c):
-    ba = a - b
-    bc = c - b
-
-    cosine_angle = np.dot(ba, bc) / (
-        np.linalg.norm(ba) * np.linalg.norm(bc)
-    )
-
-    return np.degrees(
-        np.arccos(
-            np.clip(cosine_angle, -1.0, 1.0)
-        )
-    )
-```
-
-### Motion Smoothing
-
-Servo movement is smoothed using an Exponential Moving Average (EMA) filter.
-
-```python
-filtered_value = (
-    alpha * target_value +
-    (1 - alpha) * previous_value
-)
-```
+- Python source code
+- LabVIEW project files
+- Raspberry Pi middleware
+- STL models
+- Development photos
+- Demonstration GIFs
 
 ---
 
@@ -316,8 +284,8 @@ REKA ROBOTA/
 ├── Hand STL models
 
 video/
-├── Hand_Tracking.mp4
-└── Hand_Tracking_py.mp4
+├── Hand_Tracking.gif
+└── Hand_Tracking_Py.gif
 ```
 
 ---
@@ -334,22 +302,6 @@ No CI/CD workflows are included in the repository.
 
 ---
 
-## Future Improvements
-
-* Complete wrist tracking functionality currently under development
-* Move configuration values to external configuration files
-* Add diagnostics and logging
-* Improve calibration workflow
-* Support additional servo configurations
-
----
-
-## What I Learned
-
-This project helped me learn how computer vision can be combined with hardware control. I worked with MediaPipe hand tracking, geometric calculations, signal filtering, and servo motor control. It was also a good opportunity to connect software with a physical robotic system and work with custom-designed mechanical components.
-
----
-
 ## Source Code Availability
 
 Source code is private due to commercial and intellectual property reasons.
@@ -360,19 +312,17 @@ Source code is private due to commercial and intellectual property reasons.
 
 ### Adam Jastrzębski
 
-[![GitHub](https://img.shields.io/badge/GitHub-MatysiakQ-181717?style=for-the-badge\&logo=github)](https://github.com/MatysiakQ)
+[![GitHub](https://img.shields.io/badge/GitHub-MatysiakQ-181717?style=for-the-badge&logo=github)](https://github.com/MatysiakQ)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adam_Jastrzębski-0A66C2?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/adamjastrzebski/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adam_Jastrzębski-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/adamjastrzebski/)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-adamjastrzebski.bio-4CAF50?style=for-the-badge\&logo=googlechrome)](https://adamjastrzebski.bio/)
-
----
+[![Portfolio](https://img.shields.io/badge/Portfolio-adamjastrzebski.bio-4CAF50?style=for-the-badge&logo=googlechrome)](https://adamjastrzebski.bio/)
 
 ### Łukasz Koszołko
 
-[![GitHub](https://img.shields.io/badge/GitHub-lKoszolko-181717?style=for-the-badge\&logo=github)](https://github.com/lKoszolko)
+[![GitHub](https://img.shields.io/badge/GitHub-lKoszolko-181717?style=for-the-badge&logo=github)](https://github.com/lKoszolko)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Łukasz_Koszołko-0A66C2?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/%C5%82ukasz-koszo%C5%82ko-069828355/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Łukasz_Koszołko-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/%C5%82ukasz-koszo%C5%82ko-069828355/)
 
 ---
 
